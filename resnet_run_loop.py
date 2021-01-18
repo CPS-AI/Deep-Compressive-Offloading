@@ -845,7 +845,7 @@ def define_resnet_flags(resnet_size_choices=None):
 			help=flags_core.help_wrap(
 					'dont init resenet/dense during fine tuning'))
 	flags.DEFINE_float(
-			name='compress_ratio', default=0.05,
+			name='compress_ratio', default=0.1,
 			help=flags_core.help_wrap(
 					'the compress ratio of the offloading layer'))
 
