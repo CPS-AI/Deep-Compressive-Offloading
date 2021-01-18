@@ -808,7 +808,7 @@ class Model(object):
 						stride=4, sn=self.sn, use_bias=False, 
 						data_format=self.data_format, scope='samp_conv')
 
-				num_centers = 32
+				num_centers = 8
 				quant_centers = tf.get_variable(
 			        'quant_centers', shape=(num_centers,), dtype=tf.float32,
 			        initializer=tf.random_uniform_initializer(minval=-16., 
